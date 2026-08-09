@@ -2,6 +2,8 @@
 
 Inspect untracked and ignored paths inside a Git worktree, including ignored directories that often hide in plain sight.
 
+Source and issues: https://github.com/felixhartmannnn/gitignored
+
 ## About
 
 `gitignored` answers a common question: beyond normal `git status`, what is being left out of a repository, and where? It walks the tracked tree and nearby working tree, cross-references `.gitignore`, `.git/info/exclude`, and global excludes, and produces machine-readable reports for audits, cleanup, and repo hygiene workflows.
@@ -55,10 +57,10 @@ gitignored
 ├── README.md
 ├── pyproject.toml
 ├── gitignored
-│   └── __init__.py
-│   └── cli.py
-│   └── collector.py
-│   └── model.py
+│   ├── __init__.py
+│   ├── cli.py
+│   ├── collector.py
+│   ├── model.py
 │   └── report.py
 └── tests
     └── test_gitignored.py
