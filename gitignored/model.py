@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-__all__ = ["Entry", "collect"]
+__all__ = ["Entry"]
 
 
 class Entry:

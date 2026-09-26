@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import os
 import subprocess
-from typing import Iterable, Iterator
+from typing import Iterable
 
 from .model import Entry
 
@@ -66,7 +66,6 @@ def collect(
     ignored_norm = _normalize(ignored_raw, repo)
     untracked_norm = _normalize(untracked_raw, repo)
 
-    prefix = repo + os.sep
     excluded_dirs = [d.rstrip("/") for d in (excluded_dirs or [])]
 
     def _excluded(path: str) -> bool:
