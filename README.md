@@ -53,17 +53,22 @@ gitignored --untracked
 ## Project structure
 
 ```
-gitignored
-├── README.md
-├── pyproject.toml
-├── gitignored
-│   ├── __init__.py
-│   ├── cli.py
-│   ├── collector.py
-│   ├── model.py
-│   └── report.py
-└── tests
-    └── test_gitignored.py
+.github/
+├── workflows/
+│   └── tests.yml
+.gitignore
+LICENSE
+README.md
+gitignored/
+├── __init__.py
+├── __main__.py
+├── cli.py
+├── collector.py
+├── model.py
+└── report.py
+pyproject.toml
+tests/
+└── test_gitignored.py
 ```
 
 ## Tags / keywords
